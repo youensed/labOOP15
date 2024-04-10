@@ -60,7 +60,7 @@ namespace Lab15s
             }
             else
             {
-                textBoxResult.Text = "¬вед≥ть число х";
+                textBoxSum.Text = "¬вед≥ть число х";
             }
             if (Double.TryParse(textBoxY2.Text, out double result1))
             {
@@ -68,7 +68,7 @@ namespace Lab15s
             }
             else
             {
-                textBoxResult.Text = "¬вед≥ть число Y";
+                textBoxSum.Text = "¬вед≥ть число Y";
             }
             if (Double.TryParse(textBoxX2.Text, out double result2) && Double.TryParse(textBoxY2.Text, out double result13))
             {
@@ -76,6 +76,10 @@ namespace Lab15s
                 textBoxSub.Text = Convert.ToString(x - y);
                 textBoxMul.Text = Convert.ToString(x * y);
                 textBoxDiv.Text = Convert.ToString(x / y);
+            }
+            else
+            {
+                textBoxSum.Text = "¬вед≥ть корректне числове значенн€";
             }
 
         }
@@ -205,17 +209,17 @@ namespace Lab15s
             {
                 if (!(Double.TryParse(s[i], out double resss)))
                 {
-                    return false; //если хоть один символ не число, то выкидываешь "ложь"
+                    return false;
                 }
             }
-            return true; //если ни разу не выбило в цикле, значит, все символы - это цифры
+            return true;
         }
 
         private void buttonEditText_Click(object sender, EventArgs e)
         {
-                textBoxEdited.Text = textBoxUnedited.Text.Replace(" ", ", ");
-           
-           
+            textBoxEdited.Text = textBoxUnedited.Text.Replace(" ", ", ");
         }
+
+
     }
 }

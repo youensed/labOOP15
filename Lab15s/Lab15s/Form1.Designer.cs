@@ -282,18 +282,18 @@
             // 
             // textBoxDiv
             // 
-            textBoxDiv.Location = new Point(285, 314);
+            textBoxDiv.Location = new Point(502, 308);
             textBoxDiv.Name = "textBoxDiv";
             textBoxDiv.ReadOnly = true;
-            textBoxDiv.Size = new Size(150, 31);
+            textBoxDiv.Size = new Size(198, 31);
             textBoxDiv.TabIndex = 13;
             // 
             // textBoxMul
             // 
-            textBoxMul.Location = new Point(285, 249);
+            textBoxMul.Location = new Point(502, 246);
             textBoxMul.Name = "textBoxMul";
             textBoxMul.ReadOnly = true;
-            textBoxMul.Size = new Size(150, 31);
+            textBoxMul.Size = new Size(198, 31);
             textBoxMul.TabIndex = 12;
             // 
             // textBoxSub
@@ -301,7 +301,7 @@
             textBoxSub.Location = new Point(83, 311);
             textBoxSub.Name = "textBoxSub";
             textBoxSub.ReadOnly = true;
-            textBoxSub.Size = new Size(150, 31);
+            textBoxSub.Size = new Size(358, 31);
             textBoxSub.TabIndex = 11;
             // 
             // textBoxSum
@@ -309,13 +309,13 @@
             textBoxSum.Location = new Point(83, 249);
             textBoxSum.Name = "textBoxSum";
             textBoxSum.ReadOnly = true;
-            textBoxSum.Size = new Size(150, 31);
+            textBoxSum.Size = new Size(358, 31);
             textBoxSum.TabIndex = 10;
             // 
             // labelDiv
             // 
             labelDiv.AutoSize = true;
-            labelDiv.Location = new Point(239, 317);
+            labelDiv.Location = new Point(448, 311);
             labelDiv.Name = "labelDiv";
             labelDiv.Size = new Size(48, 25);
             labelDiv.TabIndex = 9;
@@ -324,7 +324,7 @@
             // labelMul
             // 
             labelMul.AutoSize = true;
-            labelMul.Location = new Point(239, 255);
+            labelMul.Location = new Point(447, 252);
             labelMul.Name = "labelMul";
             labelMul.Size = new Size(49, 25);
             labelMul.TabIndex = 8;
