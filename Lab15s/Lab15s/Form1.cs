@@ -79,7 +79,7 @@ namespace Lab15s
             }
             else
             {
-                textBoxSum.Text = "Введіть корректне числове значення";
+                textBoxSum.Text = "Введіть коректне числове значення";
             }
 
         }
@@ -88,7 +88,7 @@ namespace Lab15s
         {
             double a = 0, b = 0, c = 0, q = 0;
 
-            if (Double.TryParse(textBoxGeom.Text, out double result) && Convert.ToDouble(textBoxGeom.Text) > 99)
+            if (Double.TryParse(textBoxGeom.Text, out double result) && textBoxGeom.Text.Length < 4)
             {
                 a = Math.Floor(Convert.ToDouble(textBoxGeom.Text) / 100);
                 b = Math.Floor(Convert.ToDouble(textBoxGeom.Text) / 10) % 10;
@@ -119,27 +119,32 @@ namespace Lab15s
             }
             else
             {
-                textBoxResult.Text = "Введіть число a";
+                textBoxDoubleRes.Text = "Введіть число a";
             }
-            if (Double.TryParse(textBoxB.Text, out double result1))
+            if (Double.TryParse(textBoxС.Text, out double result1))
             {
-                b = Convert.ToDouble(textBoxB.Text);
+                b = Convert.ToDouble(textBoxС.Text);
             }
             else
             {
-                textBoxResult.Text = "Введіть число b";
+                textBoxDoubleRes.Text = "Введіть число b";
             }
-            if (Double.TryParse(textBoxB.Text, out double result4))
+            if (Double.TryParse(textBoxС.Text, out double result4))
             {
                 c = Convert.ToDouble(textBoxC.Text);
             }
             else
             {
-                textBoxResult.Text = "Введіть число c";
+                textBoxDoubleRes.Text = "Введіть число с";
             }
-            if (Double.TryParse(textBoxA.Text, out double result2) && Double.TryParse(textBoxB.Text, out double result13) && Double.TryParse(textBoxC.Text, out double result5))
+
+            if (Double.TryParse(textBoxA.Text, out double result2) && Double.TryParse(textBoxС.Text, out double result13) && Double.TryParse(textBoxC.Text, out double result5))
             {
                 textBoxDoubleRes.Text = "a = " + Math.Abs(a * 2) + ", b = " + Math.Abs(b * 2) + " , c = " + Math.Abs(c * 2);
+            }
+            else
+            {
+                textBoxDoubleRes.Text = "Введіть коректні дані";
             }
         }
 
@@ -217,7 +222,16 @@ namespace Lab15s
 
         private void buttonEditText_Click(object sender, EventArgs e)
         {
-            textBoxEdited.Text = textBoxUnedited.Text.Replace(" ", ", ");
+            if (textBoxUnedited.Text != "")
+            {
+                textBoxEdited.Text = textBoxUnedited.Text.Replace(" ", ", ");
+            }
+            else
+            {
+                textBoxEdited.Text = "Заповніть рядок!";
+            }
+
+
         }
 
 

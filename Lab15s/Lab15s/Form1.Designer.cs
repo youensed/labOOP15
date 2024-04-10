@@ -69,7 +69,7 @@
             textBoxDoubleRes = new TextBox();
             label6 = new Label();
             textBoxC = new TextBox();
-            textBoxB = new TextBox();
+            textBoxС = new TextBox();
             textBoxA = new TextBox();
             label5 = new Label();
             label4 = new Label();
@@ -475,7 +475,7 @@
             taskTab4.Controls.Add(textBoxDoubleRes);
             taskTab4.Controls.Add(label6);
             taskTab4.Controls.Add(textBoxC);
-            taskTab4.Controls.Add(textBoxB);
+            taskTab4.Controls.Add(textBoxС);
             taskTab4.Controls.Add(textBoxA);
             taskTab4.Controls.Add(label5);
             taskTab4.Controls.Add(label4);
@@ -524,12 +524,12 @@
             textBoxC.Size = new Size(150, 31);
             textBoxC.TabIndex = 7;
             // 
-            // textBoxB
+            // textBoxС
             // 
-            textBoxB.Location = new Point(320, 116);
-            textBoxB.Name = "textBoxB";
-            textBoxB.Size = new Size(150, 31);
-            textBoxB.TabIndex = 6;
+            textBoxС.Location = new Point(320, 116);
+            textBoxС.Name = "textBoxС";
+            textBoxС.Size = new Size(150, 31);
+            textBoxС.TabIndex = 6;
             // 
             // textBoxA
             // 
@@ -715,7 +715,7 @@
             // 
             // textBoxSeq
             // 
-            textBoxSeq.Location = new Point(289, 104);
+            textBoxSeq.Location = new Point(499, 110);
             textBoxSeq.Name = "textBoxSeq";
             textBoxSeq.Size = new Size(233, 31);
             textBoxSeq.TabIndex = 2;
@@ -725,9 +725,9 @@
             label9.AutoSize = true;
             label9.Location = new Point(41, 110);
             label9.Name = "label9";
-            label9.Size = new Size(242, 25);
+            label9.Size = new Size(463, 25);
             label9.TabIndex = 1;
-            label9.Text = "Введіть послідовність чисел:";
+            label9.Text = "Введіть послідовність чисел, розділяючи числа комою:";
             // 
             // pictureBox6
             // 
@@ -759,6 +759,7 @@
             // 
             textBoxEdited.Location = new Point(28, 274);
             textBoxEdited.Name = "textBoxEdited";
+            textBoxEdited.ReadOnly = true;
             textBoxEdited.Size = new Size(666, 31);
             textBoxEdited.TabIndex = 5;
             // 
@@ -887,7 +888,7 @@
         private TextBox textBoxDoubleRes;
         private Label label6;
         private TextBox textBoxC;
-        private TextBox textBoxB;
+        private TextBox textBoxС;
         private TextBox textBoxA;
         private Label label5;
         private Label label4;
